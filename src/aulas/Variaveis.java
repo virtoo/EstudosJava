@@ -1,4 +1,4 @@
-package aulas.aula10;
+package aulas;
 
 public class Variaveis {
     public static void main(String[] args) {
