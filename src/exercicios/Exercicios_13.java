@@ -54,9 +54,21 @@ public class Exercicios_13 {
 //        System.out.println("A conversão para Farenheit é: " + faren + " F°");
 
 //        ===== 2 num inteiros e 1 num real =====
+        System.out.println("Digite três números:");
          int n1 = scan.nextInt();
          int n2 = scan.nextInt();
-         double n3 = scan.nextInt();
+         double n3 = scan.nextDouble();
+         double produto = (n1 * 2) * (double) (n2 / 2);
+         double somatrip = (n1 * 3) + n3;
+         double cub = Math.pow(n3,3);
+        System.out.println("Primeiro número: " + n1);
+        System.out.println("Segundo número: " + n2);
+        System.out.println("Terceiro número: " + n3);
+        System.out.println("O produto do dobro do primeiro com a metade do segundo é: " + produto);
+        System.out.println("A soma do triplo do primeiro com o terceiro é: " + somatrip);
+        System.out.println("O cubo do terceiro é: " + cub);
 
+//        ===== IMC -> Peso / Altura² =====
+        
     }
 }
