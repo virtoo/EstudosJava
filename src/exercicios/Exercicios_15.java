@@ -103,8 +103,86 @@ public class Exercicios_15 {
 //        }
 
 //        ====== leitura de preço três produtos e o mais barato deles ======
-
+//        double p1, p2, p3;
+//        System.out.print("Entre com o preço do primeiro produto: R$");
+//        p1 = scan.nextDouble();
+//        System.out.print("Entre com o preço do segundo produto: R$");
+//        p2 = scan.nextDouble();
+//        System.out.print("Entre com o preço do terceiro produto: R$");
+//        p3 = scan.nextDouble();
+//        if (p1 < p2 && p1 < p3){
+//            System.out.println("Compre o primeiro produto");
+//        } else if (p2 < p1 && p2 < p3) {
+//            System.out.println("Compre o segundo produto");
+//        } else {
+//            System.out.println("Compre o terceiro produto");
+//        }
 
 //        ====== números em ordem decrescente ======
+//        System.out.println("Entre com três números aleatórios para mostrar a ordem decrescente");
+//        int a, b, c;
+//        a = scan.nextInt();
+//        b = scan.nextInt();
+//        c = scan.nextInt();
+//        if (a <= b && a <= c && b <= c){
+//            System.out.println(c + " - " + b + " - " + a);
+//        } else if (a <= b && a <= c && c <= b){
+//            System.out.println(b + " - " + c + " - " + a);
+//        } else if (b <= a && b <= c && c <= a){
+//            System.out.println(a + " - " + c + " - " + b);
+//        } else if (b <= a && b <= c && a <= c){
+//            System.out.println(c + " - " + a + " - " + b);
+//        } else if (c <= a && c <= b && a <= b){
+//            System.out.println(b + " - " + a + " - " + c);
+//        }else if (c <= a && c <= b && b <= a){
+//            System.out.println(a + " - " + b + " - " + c);
+//        } else {
+//            System.out.println("Números são iguais");
+//        }
+
+//        ====== turno de estudos ======
+//        System.out.println("Digite o seu nome: ");
+//        String nome = scan.next();
+//        System.out.println("Qual turno você estuda? M - Matutino; V - Vespertino; N - Noturno");
+//        String turno = scan.next();
+//        if (turno.equalsIgnoreCase("M")){
+//            System.out.println("Bom dia, " + nome + "!!!");
+//        } else if (turno.equalsIgnoreCase("V")) {
+//            System.out.println("Boa tarde, " + nome + "!!!");
+//        } else if (turno.equalsIgnoreCase("N")) {
+//            System.out.println("Boa noite, " + nome + "!!!");
+//        } else {
+//            System.out.println("Valor Inválido!");
+//        }
+
+//        ====== aumento de salário ======
+//        System.out.println("Entre com o seu salário: ");
+//        double salario = scan.nextDouble();
+//        int percentual = 0;
+//        if (salario <= 280){
+//            percentual = 20;
+//        } else if (salario > 280 && salario < 700) {
+//            percentual = 15;
+//        } else if (salario >= 700 && salario < 1500) {
+//            percentual = 10;
+//        } else if (salario >= 1500) {
+//            percentual = 5;
+//        }
+//        double aumento = (salario / 100) * percentual;
+//        double salarioAjustado = salario + aumento;
+//        System.out.println("Salário: R$" + salario);
+//        System.out.println("Percentual: " + percentual + "%");
+//        System.out.println("Aumento: R$" + aumento);
+//        System.out.println("Salário ajustado: R$" + salarioAjustado);
+
+//        ====== calculo da folha de pagamento ======
+        System.out.println("Entre com o valor/hora: ");
+        double valorHora = scan.nextDouble();
+        System.out.println("Entre com a quantidade de horas trabalhadas: ");
+        double horaTrab = scan.nextDouble();
+        double salarioBruto = valorHora * horaTrab;
+        double inss = (salarioBruto / 100) * 8;
+
+//        ====== dia da semana
     }
 }
