@@ -176,13 +176,184 @@ public class Exercicios_15 {
 //        System.out.println("Salário ajustado: R$" + salarioAjustado);
 
 //        ====== calculo da folha de pagamento ======
-        System.out.println("Entre com o valor/hora: ");
-        double valorHora = scan.nextDouble();
-        System.out.println("Entre com a quantidade de horas trabalhadas: ");
-        double horaTrab = scan.nextDouble();
-        double salarioBruto = valorHora * horaTrab;
-        double inss = (salarioBruto / 100) * 8;
+//        System.out.println("Entre com o valor/hora: ");
+//        double valorHora = scan.nextDouble();
+//        System.out.println("Entre com a quantidade de horas trabalhadas: ");
+//        double horaTrab = scan.nextDouble();
+//        double salarioBruto = valorHora * horaTrab;
+//        double fgts = salarioBruto * 0.11;
+//        double inss = salarioBruto * 0.1;
+//        int impostoR = 0;
+//        if (salarioBruto <= 900){
+//            impostoR = 0;
+//        } else if (salarioBruto > 900 && salarioBruto <= 1500) {
+//            impostoR = 5;
+//        } else if (salarioBruto > 1500 && salarioBruto <= 2500) {
+//            impostoR = 10;
+//        } else if (salarioBruto > 2500) {
+//            impostoR = 20;
+//        }
+//        double descontoIr = (salarioBruto / 100) * impostoR;
+//        double totalDesc = descontoIr + inss;
+//        double salarioLiquido = salarioBruto - (totalDesc);
+//        System.out.println("Salário Bruto: R$ " + salarioBruto);
+//        System.out.println("IR: R$ " + descontoIr);
+//        System.out.println("INSS: R$ " + inss);
+//        System.out.println("FGTS: R$ " + fgts);
+//        System.out.println("Total de descontos: R$ " + totalDesc);
+//        System.out.println("Salário Líquido: R$ " + salarioLiquido);
 
-//        ====== dia da semana
+//        ====== dia da semana ======
+//        System.out.println("Entre com um dia da semana:");
+//        int dia = scan.nextInt();
+//        switch (dia){
+//            case 1:
+//                System.out.println("Domingo");break;
+//            case 2:
+//                System.out.println("Segunda");break;
+//            case 3:
+//                System.out.println("Terça");break;
+//            case 4:
+//                System.out.println("Quarta");break;
+//            case 5:
+//                System.out.println("Quinta");break;
+//            case 6:
+//                System.out.println("Sexta");break;
+//            case 7:
+//                System.out.println("Sábado");break;
+//            default:
+//                System.out.println("Valor inválido!");break;
+//        }
+
+//        ====== notas do aluno --> A B C D E ======
+//        System.out.println("Entre com a primeira nota do aluno: ");
+//        double nota1 = scan.nextDouble();
+//        System.out.println("Entre com a segunda nota do aluno: ");
+//        double nota2 = scan.nextDouble();
+//        double media = (nota1 + nota2) / 2;
+//        String aproveitamento = "";
+//        if (media >= 9 && media <= 10) {
+//            aproveitamento = "A";
+//        } else if (media >= 7.5 && media < 9) {
+//            aproveitamento = "B";
+//        } else if (media >= 6 && media < 7.5) {
+//            aproveitamento = "C";
+//        } else if (media >= 4 && media < 6) {
+//            aproveitamento = "D";
+//        } else if (media < 4) {
+//            aproveitamento = "E";
+//        }
+//        switch (aproveitamento){
+//            case "A":
+//            case "B":
+//            case "C":
+//                System.out.println("APROVADO !!!");break;
+//            case "D":
+//            case "E":
+//                System.out.println("REPROVADO !!!");break;
+//
+//        }
+
+//        ====== tres lados do triangulo ======
+//        System.out.println("Entre com o primeiro lado do triângulo: ");
+//        double l1 = scan.nextDouble();
+//        System.out.println("Entre com o segundo lado do triângulo: ");
+//        double l2 = scan.nextDouble();
+//        System.out.println("Entre com o terceiro lado do triângulo: ");
+//        double l3 = scan.nextDouble();
+//        if ((l1 < (l2 + l3)) || (l2 < (l1 + l3)) || (l3 < (l2 + l1))){
+//            if (l1 == l2 && l1 == l3){
+//                System.out.println("Triângulo Equilátero");
+//            } else if (l1 == l2 || l1 == l3 || l2 == l3) {
+//                System.out.println("Triângulo Isóceles");
+//            } else if (l1 != l2 && l1 != l3 && l2 != l3) {
+//                System.out.println("Triângulo Escaleno");
+//            }
+//        } else {
+//            System.out.println("Não forma um triângulo");
+//        }
+
+//        ====== raizes da equação - ax2 + bx + c ======
+//        System.out.println("|||||||| ax² + bx + c ||||||||");
+//        System.out.println("Entre com o valor de 'a': ");
+//        int a = scan.nextInt();
+//        if (a == 0){
+//            System.out.println("A equação não é de segundo grau...");
+//        } else {
+//        System.out.println("Entre com o valor de 'b': ");
+//        int b = scan.nextInt();
+//        System.out.println("Entre com o valor de 'c': ");
+//        int c = scan.nextInt();
+//        double delta = Math.pow(b,2) - (4 * a * c);
+//        double x1 = (-b + Math.sqrt(delta)) / 2 * a ;
+//        double x2 = (-b - Math.sqrt(delta)) / 2 * a ;
+//            if (delta < 0){
+//                System.out.println("Não há raizes");
+//            } else {
+//                System.out.println("Delta: " + delta);
+//                System.out.println("x': " + x1);
+//                System.out.println("x'': " + x2);
+//            }
+//        }
+
+//        ====== ano bissexto ======
+//        System.out.println("Entre com um ano: ");
+//        int ano = scan.nextInt();
+//        if (((ano % 400) == 0) || ((ano % 4) == 0 ) && ((ano % 100 ) != 0)){
+//            System.out.println("É bissexto");
+//        } else {
+//            System.out.println("Não é bissexto");
+//        }
+
+//        ====== par ou ímpar ======
+//        System.out.println("Entre com um número");
+//        int num = scan.nextInt();
+//        if (num % 2 == 0){
+//            System.out.println("" + num + " é par");
+//        } else {
+//            System.out.println("" + num + " é ímpar");
+//        }
+
+//        ====== operação desejada e par ou ímpar ======
+        System.out.println("Entre com o primeiro número: ");
+        double n1 = scan.nextDouble();
+        System.out.println("Entre com o segundo número: ");
+        double n2 = scan.nextDouble();
+        System.out.println("Escolha uma operação ( + - * / )");
+        String opercao = scan.next();
+        double result = 0;
+        boolean valid = true;
+        switch (opercao){
+            case "+":
+                result = n1 + n2;
+                break;
+            case "-":
+                result = n1 - n2;
+                break;
+            case "*":
+                result = n1 * n2;
+                break;
+            case "/":
+                result = n1 / n2;
+                break;
+            default:
+                System.out.println("Não é uma operação válida");
+                valid = false;
+        }
+        if (valid){
+            System.out.println("Resultado: " + result);
+            if (result >= 0){
+                System.out.println("Resultado é positivo");
+            } else {
+                System.out.println("Resultado é negativo");
+            }
+            if (result % 2 == 0){
+                System.out.println("Resultado é par");
+            } else {
+                System.out.println("Resultado é ímpar");
+            }
+        }
+
+//        ====== 5 perguntas sobre crime ======
     }
 }
