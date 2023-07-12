@@ -315,45 +315,172 @@ public class Exercicios_15 {
 //        }
 
 //        ====== operação desejada e par ou ímpar ======
-        System.out.println("Entre com o primeiro número: ");
-        double n1 = scan.nextDouble();
-        System.out.println("Entre com o segundo número: ");
-        double n2 = scan.nextDouble();
-        System.out.println("Escolha uma operação ( + - * / )");
-        String opercao = scan.next();
-        double result = 0;
-        boolean valid = true;
-        switch (opercao){
-            case "+":
-                result = n1 + n2;
-                break;
-            case "-":
-                result = n1 - n2;
-                break;
-            case "*":
-                result = n1 * n2;
-                break;
-            case "/":
-                result = n1 / n2;
-                break;
-            default:
-                System.out.println("Não é uma operação válida");
-                valid = false;
-        }
-        if (valid){
-            System.out.println("Resultado: " + result);
-            if (result >= 0){
-                System.out.println("Resultado é positivo");
-            } else {
-                System.out.println("Resultado é negativo");
-            }
-            if (result % 2 == 0){
-                System.out.println("Resultado é par");
-            } else {
-                System.out.println("Resultado é ímpar");
-            }
-        }
+//        System.out.println("Entre com o primeiro número: ");
+//        double n1 = scan.nextDouble();
+//        System.out.println("Entre com o segundo número: ");
+//        double n2 = scan.nextDouble();
+//        System.out.println("Escolha uma operação ( + - * / )");
+//        String opercao = scan.next();
+//        double result = 0;
+//        boolean valid = true;
+//        switch (opercao){
+//            case "+":
+//                result = n1 + n2;
+//                break;
+//            case "-":
+//                result = n1 - n2;
+//                break;
+//            case "*":
+//                result = n1 * n2;
+//                break;
+//            case "/":
+//                result = n1 / n2;
+//                break;
+//            default:
+//                System.out.println("Não é uma operação válida");
+//                valid = false;
+//        }
+//        if (valid){
+//            System.out.println("Resultado: " + result);
+//            if (result >= 0){
+//                System.out.println("Resultado é positivo");
+//            } else {
+//                System.out.println("Resultado é negativo");
+//            }
+//            if (result % 2 == 0){
+//                System.out.println("Resultado é par");
+//            } else {
+//                System.out.println("Resultado é ímpar");
+//            }
+//        }
 
 //        ====== 5 perguntas sobre crime ======
+//        System.out.println("Telefonou para a vítma?");
+//        String tel = scan.next();
+//        System.out.println("Esteve no local do crime?");
+//        String local = scan.next();
+//        System.out.println("Mora perto da vítma?");
+//        String mora = scan.next();
+//        System.out.println("Devia para a vítma?");
+//        String divida = scan.next();
+//        System.out.println("Já trabalhou com a vítma?");
+//        String trab = scan.next();
+//        int cont = 0;
+//        if (tel.equalsIgnoreCase("S")){
+//            cont++;
+//        }
+//        if (local.equalsIgnoreCase("S")){
+//            cont++;
+//        }
+//        if (mora.equalsIgnoreCase("S")){
+//            cont++;
+//        }
+//        if (divida.equalsIgnoreCase("S")){
+//            cont++;
+//        }
+//        if (trab.equalsIgnoreCase("S")){
+//            cont++;
+//        }
+//        if (cont == 2){
+//            System.out.println("Suspeita");
+//        } else if (cont == 3 || cont ==4) {
+//            System.out.println("Cúmplice");
+//        } else if (cont == 5) {
+//            System.out.println("Assassino");
+//        } else {
+//            System.out.println("Inocente");
+//        }
+
+//        ====== combustivel ======
+//        System.out.println("Qual combustível deseja abastecer? A - Álcool | G - Gasolina");
+//        String combustivel = scan.next();
+//        System.out.println("Quantos Litros?");
+//        double litragem = scan.nextDouble();
+//        double alcool, gasolina;
+//        alcool = 1.9;
+//        gasolina = 2.5;
+//        double total = 0;
+//        int percentualDesc = 0;
+//        if (combustivel.equalsIgnoreCase("A")){
+//            if (litragem <= 20){
+//             percentualDesc = 3;
+//            } else {
+//                percentualDesc = 5;
+//            }
+//            total = litragem * alcool;
+//        } else if (combustivel.equalsIgnoreCase("G")) {
+//            if (litragem <= 20){
+//                percentualDesc = 4;
+//            } else {
+//                percentualDesc = 6;
+//            }
+//            total = litragem * gasolina;
+//        } else {
+//            System.out.println("Combustível inválido");
+//        }
+//        double desconto = (total / 100) * percentualDesc;
+//        double valorPag = total - desconto;
+//        System.out.println("Valor do abastecimento: R$ " + valorPag);
+
+//        ====== fruteira ======
+//        System.out.println("Quantidade (kg) de morango: ");
+//        double qtdMorango = scan.nextDouble();
+//        System.out.println("Quantidade (kg) de maçã: ");
+//        double qtdMaca = scan.nextDouble();
+//        double precoKgMorango = 0;
+//        if (qtdMorango <= 5){
+//            precoKgMorango = 2.5;
+//        } else {
+//            precoKgMorango = 2.2;
+//        }
+//        double precoKgMaca = 0;
+//        if (qtdMaca <= 5){
+//            precoKgMaca = 1.8;
+//        } else {
+//            precoKgMaca = 1.5;
+//        }
+//        double precoTotalMorango = qtdMorango * precoKgMorango;
+//        double precoTotalMaca = qtdMaca * precoKgMaca;
+//        double precoParcial = precoTotalMaca + precoTotalMorango;
+//        double precoTotal = precoParcial;
+//        if((qtdMorango + qtdMaca > 8) || precoParcial > 25){
+//            precoTotal = precoParcial - ((precoParcial / 100) * 10);
+//        }
+//        System.out.println("Preço total: " + precoTotal);
+
+//        ====== hipermercado ======
+        System.out.println("Quantidade de carne (kg)");
+        double qtdCarne = scan.nextDouble();
+        System.out.println("Tipo de Carne: File Duplo - Alcatra - Picanha");
+        String tpCarne = scan.next();
+        System.out.println("Você possui cartão Tabajara? S - Sim | N - Não ");
+        String cartao = scan.next();
+        double valorKgCarne = 0;
+        if (tpCarne.equalsIgnoreCase("f")){
+            if (qtdCarne <= 5){
+                valorKgCarne = 4.9;
+            } else {
+                valorKgCarne = 5.8;
+            }
+        } else if (tpCarne.equalsIgnoreCase("a")){
+            if (qtdCarne <= 5){
+                valorKgCarne = 5.9;
+            } else {
+                valorKgCarne = 6.8;
+            }
+        } else if (tpCarne.equalsIgnoreCase("p")){
+            if (qtdCarne <= 5){
+                valorKgCarne = 6.9;
+            } else {
+                valorKgCarne = 7.8;
+            }
+        }
+        double valorParcial = qtdCarne * valorKgCarne;
+        double valorTotal = valorParcial;
+        if (cartao.equalsIgnoreCase("s")){
+            valorTotal = valorParcial - ((valorParcial / 100 ) * 5);
+        }
+        System.out.println("Preço total: " + valorTotal);
+
     }
 }
