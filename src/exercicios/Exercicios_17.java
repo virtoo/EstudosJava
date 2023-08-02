@@ -370,18 +370,32 @@ public class Exercicios_17 {
 //        System.out.println("Média: " + media);
 
 //        ====== valor de gastos com cds ======
-        System.out.println("Entre com a quantidade de CDs da coleção: ");
-        int cds = scan.nextInt();
-        double valorCd;
-        double soma = 0;
-        for (int i = 1; i <= cds; i++){
-            System.out.println("Entre com o valor do CD " + i);
-            valorCd = scan.nextDouble();
-            soma += valorCd;
-        }
-        double media = soma / cds;
-        System.out.printf("Total: R$ %.2f%n", soma);
-        System.out.printf("Média: R$ %.2f", media);
+//        System.out.println("Entre com a quantidade de CDs da coleção: ");
+//        int cds = scan.nextInt();
+//        double valorCd;
+//        double soma = 0;
+//        for (int i = 1; i <= cds; i++){
+//            System.out.println("Entre com o valor do CD " + i);
+//            valorCd = scan.nextDouble();
+//            soma += valorCd;
+//        }
+//        double media = soma / cds;
+//        System.out.printf("Total: R$ %.2f%n", soma);
+//        System.out.printf("Média: R$ %.2f", media);
 
+//        ====== loja de 1,99 ======
+//        System.out.println("Loja Quase Dois - Tabela de Preços");
+//        double valor = 1.99;
+//        for (int i = 1; i <= 50; i++){
+//        System.out.println(i + " - R$ " + (valor * i));
+//        }
+
+//        ====== panificadora ======
+        System.out.println("Preço do pão R$ 0,18");
+        System.out.println("Panificadora Peter Pão - Tabela de Preços");
+        double valPao = 0.18;
+        for (int i = 1; i <= 50; i++){
+            System.out.printf(i + " - R$ %.2f%n", (valPao * i));
+        }
     }
 }
