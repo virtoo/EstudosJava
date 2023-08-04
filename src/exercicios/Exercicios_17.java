@@ -1,4 +1,5 @@
 package exercicios;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.Formatter;
 import java.math.*;
@@ -391,11 +392,212 @@ public class Exercicios_17 {
 //        }
 
 //        ====== panificadora ======
-        System.out.println("Preço do pão R$ 0,18");
-        System.out.println("Panificadora Peter Pão - Tabela de Preços");
-        double valPao = 0.18;
-        for (int i = 1; i <= 50; i++){
-            System.out.printf(i + " - R$ %.2f%n", (valPao * i));
-        }
+//        System.out.println("Preço do pão R$ 0,18");
+//        System.out.println("Panificadora Peter Pão - Tabela de Preços");
+//        double valPao = 0.18;
+//        for (int i = 1; i <= 50; i++){
+//            System.out.printf(i + " - R$ %.2f%n", (valPao * i));
+//        }
+
+//        ====== caixa ======
+//        int compra;
+//        double valor;
+//        double total = 0;
+//        double dinheiro;
+//        double troco;
+//        boolean finalizada = false;
+//        String continuarCompra;
+//        String output;
+
+//        for (int i;;){
+//            i = 1;
+//            finalizada = false;
+//            System.out.println("Lojas Tabajara");
+//            do {
+//                System.out.printf("Produto " + i++ + ": R$ ");
+//                valor = scan.nextDouble();
+//                total += valor;
+//                if (valor == 0){
+//                    finalizada = true;
+//                }
+//            }while (!finalizada);
+//            System.out.printf("Total: R$ %.2f%n", total);
+//            dinheiro = scan.nextDouble();
+//            troco = dinheiro - total;
+//            System.out.printf("Dinheiro: R$ %.2f%n", dinheiro);
+//            System.out.printf("Troco: R$ %.2f%n", troco);
+//            System.out.println("-----------------------");
+
+//        do {
+//            System.out.println("Deseja informar uma nova compra? S/N");
+//            continuarCompra = scan.next();
+//            if (continuarCompra.equalsIgnoreCase("s")){
+//                output = "Lojas Tabajara \n";
+//                System.out.println("Informe a quantidade de itens comprados");
+//                compra = scan.nextInt();
+//                total = 0;
+//                for (int i = 1; i <= compra; i++){
+//                    System.out.println("Informe o valor do Produto " + i);
+//                    valor = scan.nextDouble();
+//                    total += valor;
+//                    output += "Produto " + i + ": R$ " + valor + "\n";
+//                }
+//                output += "Total: R$ " + total + "\n";
+//                System.out.println("Total: R$ " + total);
+//                System.out.println("Informe o pagamento: ");
+//                dinheiro = scan.nextDouble();
+//                output += "Dinheiro: R$ " + dinheiro + "\n";
+//                troco = dinheiro - total;
+//                output += "Troco: R$ " + troco;
+//                System.out.println(output);
+//            } else {
+//                finalizada = true;
+//            }
+//        } while (!finalizada);
+
+//        ====== fatorial ======
+//        System.out.println("Entre com um número:");
+//        int num = scan.nextInt();
+//        int fatorial = 1;
+//        System.out.println("Fatorial de " + num);
+//        System.out.print(num + "! = ");
+//        for (int i = num; i > 1; i--){
+//            fatorial *= i;
+//            System.out.print(i + " . " );
+//        }
+//        System.out.println(" 1 = " + fatorial);
+
+//        ====== temperaturas ======
+//        System.out.println("Entre com a quantidade de Temperaturas: ");
+//        int qtdTemperaturas = scan.nextInt();
+//        double temperatura;
+//        double maior = Integer.MIN_VALUE;
+//        double menor = Integer.MAX_VALUE;
+//        double soma = 0;
+//        for (int i = 1; i <= qtdTemperaturas; i++){
+//            System.out.println("Temperatura " + i + " - ");
+//            temperatura = scan.nextDouble();
+//            soma += temperatura;
+//            if (temperatura > maior){
+//                maior = temperatura;
+//            } else if (temperatura < menor) {
+//                menor = temperatura;
+//            }
+//        }
+//        double media = soma / qtdTemperaturas;
+//        System.out.println("Maior: " + maior);
+//        System.out.println("Menor: " + menor);
+//        System.out.println("Média: " + media);
+
+//        ====== numeros primos ======
+//        System.out.println("Entre com um número:");
+//        int num = scan.nextInt();
+//        System.out.println("Números Primos até " + num);
+//        boolean primo = true;
+//
+//        for (int i = 1; i <= num; i++){
+//            primo = true;
+//            for (int j = 2; j < i; j++){
+//                if (i % j == 0){
+//                    primo = false;
+//                }
+//            }
+//            if (primo){
+//                System.out.println(i);
+//            }
+//        }
+
+//        ====== tabuada ======
+//        System.out.println("Entre com um número: ");
+//        int num = scan.nextInt();
+//        int inicio, fim;
+//        boolean invalido = true;
+//        do {
+//            System.out.println("Entre com o inicio da tabuada:");
+//            inicio = scan.nextInt();
+//            System.out.println("Entre com o final da tabuada:");
+//            fim = scan.nextInt();
+//            if(fim > inicio){
+//                invalido = false;
+//            }
+//        } while (invalido);
+//
+//        System.out.println("Começar por: " + inicio);
+//        System.out.println("Terminar por: " + fim);
+//        System.out.println("Tabuada de " + num + " começando em " + inicio + " e terminando em " + fim +":");
+//        for (int i = inicio; i <= fim; i++){
+//                System.out.println(num + " * " + i + " = " + num*i);
+//        }
+
+//        ====== aumento salarial por ano ======
+//        double salario = 1000;
+//        double percentualAumento = 1.5;
+//        int anoTrabalho = 1995;
+//        DecimalFormat format = new DecimalFormat("###,###.##");
+//        System.out.println("Ano em que foi contratado: 1995");
+//        System.out.println("Salário inicial: R$ 1.000");
+//        for (int i = anoTrabalho; i <= 2023; i++){
+//            System.out.println(i + ": R$ " + format.format(salario));
+//            salario += (salario / 100) * percentualAumento;
+//            percentualAumento *= 2;
+//        }
+
+//        ====== lanchonete ======
+        System.out.println("Especificaçâo     Código   Preço");
+        System.out.println("Cachorro Quente   100      R$ 1,20");
+        System.out.println("Bauru Simples     101      R$ 1,30");
+        System.out.println("Bauru com ovo     102      R$ 1,50");
+        System.out.println("Hambúrguer        103      R$ 1,20");
+        System.out.println("Cheeseburguer     104      R$ 1,30");
+        System.out.println("Refrigerante      105      R$ 1,00");
+        String confirmPedido;
+        int cod, qtd;
+        double total = 0;
+        String output = "";
+        boolean finalizado = false;
+        do {
+            System.out.println("Digite o código e a quantidade do item. Digite 0 0 para finalizar o pedido.");
+            cod = scan.nextInt();
+            qtd = scan.nextInt();
+            if (cod == 0 && qtd == 0){
+                       finalizado = true;
+                       output += "Total a pagar: R$ " + total;
+            } else {
+                switch (cod){
+                    case 100:
+                        output += "Cachorro Quente -> 1,20 * " + qtd;
+                        output += " = " + (1.2 * qtd) + "\n";
+                        total += 1.2 * qtd;
+                        break;
+                    case 101:
+                        output += "Bauru Simples -> 1,30 * " + qtd;
+                        output += " = " + (1.3 * qtd) + "\n";
+                        total += 1.3 * qtd;
+                        break;
+                    case 102:
+                        output += "Bauru com ovo -> 1,50 * " + qtd;
+                        output += " = " + (1.5 * qtd) + "\n";
+                        total += 1.5 * qtd;
+                        break;
+                    case 103:
+                        output += "Hambúrguer -> 1,20 * " + qtd;
+                        output += " = " + (1.2 * qtd) + "\n";
+                        total += 1.2 * qtd;
+                        break;
+                    case 104:
+                        output += "Cheeseburguer -> 1,30 * " + qtd;
+                        output += " = " + (1.3 * qtd) + "\n";
+                        total += 1.3 * qtd;
+                        break;
+                    case 105:
+                        output += "Refrigerante -> 1,00 * " + qtd;
+                        output += " = " + (qtd) + "\n";
+                        total += qtd;
+                        break;
+                }
+            }
+        } while (!finalizado);
+        System.out.println(output);
+
     }
 }
