@@ -543,61 +543,81 @@ public class Exercicios_17 {
 //        }
 
 //        ====== lanchonete ======
-        System.out.println("Especificaçâo     Código   Preço");
-        System.out.println("Cachorro Quente   100      R$ 1,20");
-        System.out.println("Bauru Simples     101      R$ 1,30");
-        System.out.println("Bauru com ovo     102      R$ 1,50");
-        System.out.println("Hambúrguer        103      R$ 1,20");
-        System.out.println("Cheeseburguer     104      R$ 1,30");
-        System.out.println("Refrigerante      105      R$ 1,00");
-        String confirmPedido;
-        int cod, qtd;
-        double total = 0;
-        String output = "";
-        boolean finalizado = false;
-        do {
-            System.out.println("Digite o código e a quantidade do item. Digite 0 0 para finalizar o pedido.");
-            cod = scan.nextInt();
-            qtd = scan.nextInt();
-            if (cod == 0 && qtd == 0){
-                       finalizado = true;
-                       output += "Total a pagar: R$ " + total;
-            } else {
-                switch (cod){
-                    case 100:
-                        output += "Cachorro Quente -> 1,20 * " + qtd;
-                        output += " = " + (1.2 * qtd) + "\n";
-                        total += 1.2 * qtd;
-                        break;
-                    case 101:
-                        output += "Bauru Simples -> 1,30 * " + qtd;
-                        output += " = " + (1.3 * qtd) + "\n";
-                        total += 1.3 * qtd;
-                        break;
-                    case 102:
-                        output += "Bauru com ovo -> 1,50 * " + qtd;
-                        output += " = " + (1.5 * qtd) + "\n";
-                        total += 1.5 * qtd;
-                        break;
-                    case 103:
-                        output += "Hambúrguer -> 1,20 * " + qtd;
-                        output += " = " + (1.2 * qtd) + "\n";
-                        total += 1.2 * qtd;
-                        break;
-                    case 104:
-                        output += "Cheeseburguer -> 1,30 * " + qtd;
-                        output += " = " + (1.3 * qtd) + "\n";
-                        total += 1.3 * qtd;
-                        break;
-                    case 105:
-                        output += "Refrigerante -> 1,00 * " + qtd;
-                        output += " = " + (qtd) + "\n";
-                        total += qtd;
-                        break;
-                }
-            }
-        } while (!finalizado);
-        System.out.println(output);
+//        System.out.println("Especificaçâo     Código   Preço");
+//        System.out.println("Cachorro Quente   100      R$ 1,20");
+//        System.out.println("Bauru Simples     101      R$ 1,30");
+//        System.out.println("Bauru com ovo     102      R$ 1,50");
+//        System.out.println("Hambúrguer        103      R$ 1,20");
+//        System.out.println("Cheeseburguer     104      R$ 1,30");
+//        System.out.println("Refrigerante      105      R$ 1,00");
+//        String confirmPedido;
+//        int cod, qtd;
+//        double total = 0;
+//        String output = "";
+//        boolean finalizado = false;
+//        do {
+//            System.out.println("Digite o código e a quantidade do item. Digite 0 0 para finalizar o pedido.");
+//            cod = scan.nextInt();
+//            qtd = scan.nextInt();
+//            if (cod == 0 && qtd == 0){
+//                       finalizado = true;
+//                       output += "Total a pagar: R$ " + total;
+//            } else {
+//                switch (cod){
+//                    case 100:
+//                        output += "Cachorro Quente -> 1,20 * " + qtd;
+//                        output += " = " + (1.2 * qtd) + "\n";
+//                        total += 1.2 * qtd;
+//                        break;
+//                    case 101:
+//                        output += "Bauru Simples -> 1,30 * " + qtd;
+//                        output += " = " + (1.3 * qtd) + "\n";
+//                        total += 1.3 * qtd;
+//                        break;
+//                    case 102:
+//                        output += "Bauru com ovo -> 1,50 * " + qtd;
+//                        output += " = " + (1.5 * qtd) + "\n";
+//                        total += 1.5 * qtd;
+//                        break;
+//                    case 103:
+//                        output += "Hambúrguer -> 1,20 * " + qtd;
+//                        output += " = " + (1.2 * qtd) + "\n";
+//                        total += 1.2 * qtd;
+//                        break;
+//                    case 104:
+//                        output += "Cheeseburguer -> 1,30 * " + qtd;
+//                        output += " = " + (1.3 * qtd) + "\n";
+//                        total += 1.3 * qtd;
+//                        break;
+//                    case 105:
+//                        output += "Refrigerante -> 1,00 * " + qtd;
+//                        output += " = " + (qtd) + "\n";
+//                        total += qtd;
+//                        break;
+//                }
+//            }
+//        } while (!finalizado);
+//        System.out.println(output);
 
+//        ====== n - 1 | m - 2
+//        System.out.println("Entre com o valor de n:");
+//        int n = scan.nextInt();
+//        double soma = 0;
+//        System.out.print("s = ");
+//        for (int i = 1, j = 1; i <= n; i++, j+=2){
+//            System.out.print(i + "/" + j + " + ");
+//            soma += i/j;
+//        }
+//        System.out.println(" = " + soma);
+
+//        ====== 1 / n ======
+        System.out.println("Digite o valor de n:");
+        int n = scan.nextInt();
+        double soma = 0;
+        for (int i = 1; i <=n ; i++){
+            System.out.print("1/" + i + " + ");
+            soma += 1/i;
+        }
+        System.out.println(" = " + soma);
     }
 }
