@@ -1,14 +1,12 @@
 package exercicios.exercicios_19;
 
-import java.util.Scanner;
 
 public class Exer22 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
 
         int[] vetorA = new int[20];
         int zeros = 0;
-        int uns = 0;
+        // int uns = 0;
 
         for (int i=0; i<vetorA.length; i++) {
             vetorA[i] = (int) Math.round(Math.random() * 1);
@@ -17,7 +15,7 @@ public class Exer22 {
             if (vetorA[i] == 0){
                 zeros++;
             } else {
-                uns++;
+                // uns++;
             }
         }
         System.out.println("Valores Vetor A");
