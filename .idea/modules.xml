@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src.com.victor/aulas/aulas.iml" filepath="$PROJECT_DIR$/src.com.victor/aulas/aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curso-java-loiane.iml" filepath="$PROJECT_DIR$/curso-java-loiane.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src.com.victor/exercicios/exercicios.iml" filepath="$PROJECT_DIR$/src.com.victor/exercicios/exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src.com.victor/src.com.victor.iml" filepath="$PROJECT_DIR$/src.com.victor/src.com.victor.iml" />
+    </modules>
+  </component>
+</project>
